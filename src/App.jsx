@@ -5,7 +5,7 @@ import InputFirst from "./components/InputFirst";
 import useCurrency from "./hooks/useCurrency";
 
 function App() {
-  const [amount, setAmount] = useState('Enter Value here');
+  const [amount, setAmount] = useState('');
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
@@ -35,7 +35,7 @@ function App() {
             e.preventDefault();
             convert();
           }}
-          
+
         >
           {/* FROM INPUT */}
           <div className="amount-input">

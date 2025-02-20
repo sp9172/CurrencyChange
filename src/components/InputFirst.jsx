@@ -23,7 +23,6 @@ const InputFirst = ({
           id={amountInputId}
           type="number"
           className="form-control"
-          placeholder="Enter amount"
           disabled={amountDisable}
           value={amount}
           onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
